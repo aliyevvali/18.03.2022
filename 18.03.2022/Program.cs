@@ -42,9 +42,8 @@ namespace _18._03._2022
                         }
                         else
                         {
-                            Console.WriteLine("Wrong input,you have to change,press any button");
-                            choice = 0;
-                            Console.ReadKey();
+                            Console.WriteLine("It's not rectangular ,it's a squre");
+                            Console.WriteLine(squre.CalcArea()+"m^2"); 
                         }
                         break;
                     case 0:
