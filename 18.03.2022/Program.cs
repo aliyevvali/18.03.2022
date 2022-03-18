@@ -6,20 +6,46 @@ namespace _18._03._2022
     {
         static void Main(string[] args)
         {
-            Console.Write("Please give side of Squre :");
-            double side = Convert.ToDouble(Console.ReadLine());
-            Square squre = new Square(side);
+           
+            
+            
+            double side;
+            do
+            {
 
-            Console.Write("Please give length of the Rectangular : ");
-            double length = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Please give width of the Rectangular : ");
-            double width = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Please give side of Squre :");
+                side = Convert.ToDouble(Console.ReadLine());
+                
+
+            } while (side < 0);
+
+
+
+
+
+            double length;
+            do
+            {
+                Console.Write("Please give length of Rectangular :");
+                length = Convert.ToDouble(Console.ReadLine());
+                
+            } while (length<0);
+
+
+
+
+            double width;
+            do
+            {
+                Console.Write("Please give length of Rectangular :");
+                width = Convert.ToDouble(Console.ReadLine());
+                
+            } while (width<0);
+
+            Square squre = new Square(side);
             Rectangular rectangular = new Rectangular(length, width);
 
-
-
             int choice;
-
             do
             {
                 Console.WriteLine("Enter number :  1)Area of the squre   2)Area of the rectangular   0)Quite");

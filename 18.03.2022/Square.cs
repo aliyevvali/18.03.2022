@@ -8,22 +8,19 @@ namespace _18._03._2022
     {
         
         private double _side;
-        public double Side
-        { 
-            get { return _side; }
-            set
-            {
-                do
-                {
-                    if (value > 0)
-                    {
-                        _side = value;
-                    }
+        //public double Side
+        //{ 
+        //    get { return _side; }
+        //    set
+        //    {                             
+        //       if (value > 0)
+        //       {
+        //           _side = value;
+        //       }               
+        //    }
 
-                } while (0>= value);
-            }
-
-        }
+        //}
+        public double Side { get; set; }
         public Square(double _side)
         {
             Side = _side;
@@ -31,7 +28,11 @@ namespace _18._03._2022
 
         public override double CalcArea()
         {
-            return Math.Round(Side*Side,2);
+            if (Side >0)
+            {
+                return Math.Round(Side * Side, 2);
+            }
+            return 0;
         }
        
     } 
