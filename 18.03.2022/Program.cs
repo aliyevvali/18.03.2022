@@ -35,7 +35,7 @@ namespace _18._03._2022
                     case 2:
                         double a = rectangular.Length;
                         double b = rectangular.Width;
-                        if (a>b)
+                        if (a!=b)
                         {
                             Console.WriteLine(rectangular.CalcArea()+"m^2");
                             Console.WriteLine("-----------------------------------------------------------------------------------------");
